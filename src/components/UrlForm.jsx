@@ -119,17 +119,14 @@ const UrlForm = ({ onShorten, showResult, darkMode }) => {
             Custom alias (optional)
           </label>
           <div className="relative">
-            <div className="absolute left-4 sm:left-5 top-1/2 transform -translate-y-1/2 text-gray-500 dark:text-gray-400 font-medium text-sm sm:text-base">
-              snipr.ly/
-            </div>
             <input
               type="text"
               value={customAlias}
               onChange={(e) => setCustomAlias(e.target.value.replace(/[^a-zA-Z0-9-_]/g, ''))}
               onFocus={() => setAliasFocused(true)}
               onBlur={() => setAliasFocused(false)}
-              placeholder="my-awesome-link"
-              className={`w-full pl-16 sm:pl-24 pr-4 sm:pr-5 py-3 sm:py-4 rounded-xl sm:rounded-2xl border-2 transition-all duration-500 focus:outline-none focus:ring-4 transform
+              placeholder="/my-awesome-link"
+              className={`w-full px-4 py-3 sm:px-5 sm:py-4 rounded-xl sm:rounded-2xl border-2 transition-all duration-500 focus:outline-none focus:ring-4 transform
                          ${aliasFocused ? 'scale-[1.02] shadow-xl' : 'hover:scale-[1.01]'}
                          bg-white/70 border-gray-200 text-gray-800 placeholder-gray-400 focus:border-purple-500 focus:ring-purple-500/20
                          dark:bg-gray-800/40 dark:border-gray-600/50 dark:text-white dark:placeholder-gray-500 dark:focus:border-purple-400 dark:focus:ring-purple-400/20
