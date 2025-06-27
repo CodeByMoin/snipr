@@ -2,6 +2,8 @@
 
 Snipr is a sleek, secure, and smart URL shortener built with Node.js, Express, Firebase, and React. It lets you shorten long URLs, customize aliases — all with optional expiration, downloadable QR codes, and easy link sharing.
 
+🌐 **Live App:** [https://snipr-ten.vercel.app](https://snipr-ten.vercel.app)
+
 ![Snipr Banner](./assets/snipr-banner.png)
 
 ---
